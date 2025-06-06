@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WanderWise</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Baumans&family=Cormorant+SC:wght@300;400;500;600;700&family=Italianno&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- box icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- AOS animation -->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- navbar -->
+    <header id="header">
+      <img class="logo" src="./images/Logo.png" alt="logo" />
+      <!-- checkbox -->
+      <input type="checkbox" id="check" />
+      <label for="check" class="icons">
+        <!-- menu -->
+        <i class="bx bx-menu" id="menuIcon"></i>
+        <!-- close -->
+        <i class="bx bx-x" id="closeIcon"></i>
+      </label>
+      <!-- menu items -->
+      <nav class="navbar">
+        <a class="navbar1" href="#home">HOME </a>
+        <a class="navbar1" href="#destination">DESTINATION </a>
+        <a class="navbar1" href="#testaments">TESTAMENTS </a>
+        <a class="navbar1" href="#contacts">CONTACTS </a>
+      </nav>
+    </header>
+    <div id="container">
+      <!-- home -->
+      <section id="home">
+        <div class="home-img">
+          <img
+            class="baliImg"
+            src="./images/4k-landscape-background-image.jpg"
+            alt="backgroung pic"
+          />
+          <h1 class="animate__animated animate__fadeInLeft" id="h1">
+            WanderWise
+          </h1>
+          <h2 class="animate__animated animate__fadeInLeft animate__delay-1s" id="h2">Smart Travel. Wild Experiences.</h2>
+        </div>
+      </section>
+      <!-- Destination -->
+      <section id="destination">
+        <h1 class="destiHead">Places we go...</h1>
+        <h2 class="destiSmallhead">Our Destinations</h2>
+       <div class="destiCards">
+            <div class="desti">
+                <img class="destiImg" src="./images/eiffel-tower-getty.jpg" alt="eiffel-tower" />
+                <div class="loc">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h2 class="destiName">Eiffel Tower</h2>
+                </div>
+              <h4 class="destiName1">France</h4>
+            </div>
+            <div class="desti">
+              <img class="destiImg" src="./images/christ-redeemer-getty.jpg" alt="christ-redeemer" />
+                  <div class="loc">
+                      <i class="fa-solid fa-location-dot"></i>
+                      <h2 class="destiName">Christ The Redeemer</h2>
+                  </div>
+                  <h4 class="destiName1">Brazil</h4>
+            </div>
+            <div class="desti">
+              <img class="destiImg" src="./images/taj-mahal-getty.jpg" alt="taj-mahal" />
+              <div class="loc">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h2 class="destiName">Taj Mahal</h2>
+                </div>
+              <h4 class="destiName1">India</h4>
+            </div>
+            <div class="desti">
+              <img class="destiImg" src="./images/sydney-opera-house-getty.jpg" alt="opera-house" />
+              <div class="loc">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h2 class="destiName">Opera House</h2>
+                </div>
+              <h4 class="destiName1">Australia</h4>
+            </div>
+            <div class="desti">
+              <img class="destiImg" src="./images/mount-fuji-getty.jpg" alt="mount-fuji" />
+              <div class="loc">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h2 class="destiName">Mount Fuji</h2>
+                </div>
+              <h4 class="destiName1">Japan</h4>
+            </div>
+            <div class="desti">
+              <img class="destiImg" src="./images/colosseum-getty.jpg" alt="colosseum" />
+              <div class="loc">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h2 class="destiName">Colosseum</h2>
+                </div>
+              <h4 class="destiName1">Italy</h4>
+            </div>
+       </div>
+      </section>
+      <!-- discount -->
+       <section id="discount">
+        <div class="disc">
+            <img class="discImg" src="./images/mountains-4k-landscape-background.jpg" alt="mountains">
+            <h2 id="disc-h2">why choose us?</h2>
+        </div>
+       </section>
+      <!-- testaments -->
+       <section id="testaments">
+        <div class="test-body">
+            <!-- <div id="testImg">
+                <img src="./images/bali-island-.jpg" alt="">
+
+            </div>
+            <div id="test-content">
+
+            </div>
+        </div>
+
+       </section> -->
+       <!-- contacts -->
+        <section id="contacts">
+            
+        </section>
+
+      <footer>This website belongs to Alwin Dsilva&reg;</footer>
+    </div>
+  </body>
+  <!-- AOS animation script -->
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- initialize AOS -->
+  <script>
+    AOS.init();
+  </script>
+</html>

@@ -1,0 +1,227 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+    font-family: "Roboto", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+#container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* justify-content: space-between; */
+}
+#header{
+    position: fixed;
+    width: 90%;
+    /* height: 17.1%; */
+    margin: 0px 0% 0% 5%;
+    display: flex; 
+    align-items: center;
+    border-radius: 70px;
+    /* padding: -2%; */
+    justify-content: space-between;
+    background-color: rgba(245, 216, 179,0.1);
+    backdrop-filter: blur(10px);
+    z-index: 10;
+}
+.logo{
+    width: 7.5rem;
+    filter: brightness(1) invert(0);
+}
+.navbar a{
+    font-weight: 600;
+    /* color: white; */
+    color: black;
+    text-decoration: none;
+    margin: 2rem;
+}
+.navbar1:hover{
+    text-decoration: underline;
+    font-size: 1.1rem;
+}
+#check{
+    display: none;
+}
+.icons{
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+    display: none;
+}
+#container{
+    width: 100%;
+    height: 100vh;
+   
+}
+.home-img{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.baliImg{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 0;
+}
+#h1, #h2{
+    position: absolute;
+    color: azure;
+    font-size: 36px;
+    z-index: 1;
+}
+#h1{
+  top: 35%;
+  left: 3%;
+  font-family: "Italianno", cursive;
+  font-weight: 200;
+  font-size: 148px;
+}
+#h2 {
+  top: 55%;
+  left: 3%;
+  font-size: 30px;
+  font-family: "Lora", serif;
+}
+#destination{
+    margin: 5% 10% 0% 10%;
+    /* border: solid darkcyan; */
+}
+.destiHead{
+    text-align: center;
+}
+.destiSmallhead{
+    text-align: center;
+    margin-bottom: 5%;
+}
+.destiCards{
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    flex-wrap: wrap;
+}
+.desti{
+    width: 320px;
+    height: 40vh;
+    background-color: antiquewhite;
+    /* transition: .5s ease-in-out; */
+}
+/* .desti:hover{
+    transform: scale(1.05);
+    display: inline;
+} */
+.destiImg{
+    width: 300px;
+    height: 200px;
+    /* padding: 6px; */
+    margin: 10px;
+}
+.loc{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    padding-left: 6px;
+    gap: 10px;
+}
+.destiName{
+    padding-left: 6px;
+    font-family: "Baumans", system-ui;
+}
+.destiName1{
+    padding-left: 6px;
+}
+.disc{
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+}
+.discImg{
+    margin-top: 5%;
+    width: 100%;
+    height: 60vh;
+    z-index: 0;
+    object-fit: cover;
+}
+#disc-h2{
+    position: absolute;
+    color: azure;
+    font-size: 36px;
+    z-index: 1;
+}
+footer{
+    text-align: center;
+}
+@media(max-width: 992px){
+    .navbar a{
+        margin: 20px;
+    }
+}
+@media(max-width: 760px){
+    .icons{
+        display: flex;
+    }
+    #closeIcon{
+        display: none;
+    }
+    #check:checked~.icons #menuIcon{
+        display: none;
+    }
+    #check:checked~.icons #closeIcon{
+        display: flex;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        display: none;
+        z-index: 10;
+    }
+    #check:checked~.navbar{
+        display: block;
+        background-color: rgb(255, 255, 255);
+    }
+    .navbar a{
+        display: block;
+        text-align: center;
+        font-size: 1.1rem;
+        margin: 1.5rem 0px;
+        color: rgb(0, 0, 0);
+        
+    }
+    #h1 {
+        top: 55%;
+        left: 3%;
+        font-family: "Italianno", cursive;
+        font-weight: 200;
+        font-size: 148px;
+    }
+    #h2 {
+        top: 75%;
+        left: 3%;
+        font-size: 30px;
+        font-family: "Lora", serif;
+    }
+}
+@media(max-width: 610px){
+     #h1 {
+        top: 55%;
+        left: 3%;
+        font-family: "Italianno", cursive;
+        font-weight: 200;
+        font-size: 108px;
+    }
+    #h2 {
+        top: 75%;
+        left: 3%;
+        font-size: 20px;
+        font-family: "Lora", serif;
+    }
+}
