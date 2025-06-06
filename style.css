@@ -147,13 +147,28 @@ html{
     width: 100%;
     height: 60vh;
     z-index: 0;
+    position: relative;
     object-fit: cover;
+    transform: scaleX(-1);
 }
 #disc-h2{
     position: absolute;
     color: azure;
-    font-size: 36px;
-    z-index: 1;
+    font-family: "Cormorant SC", serif;
+    top: 50%;
+    right: 10%;
+    font-size: 40px;
+    z-index: 10;
+}
+#disc-h3{
+    position: absolute;
+    color: azure;
+    top: 60%;
+    right: 10%;
+    font-family: "Roboto", sans-serif;
+    text-align: end;
+    font-size: 20px;
+    z-index: 10;
 }
 footer{
     text-align: center;
