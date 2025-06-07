@@ -180,20 +180,39 @@ span{
     font-size: 22px;
     z-index: 1;
 }
-#testaments{
+#review{
     margin: 5% 10% 0% 10%;
     /* border: solid darkcyan; */
 }
-.test-body{
+.review-body{
     margin: 5% 10% 0% 10%;
-    /* border: solid violet; */
+    padding: 2%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #fffee6;
+    gap: 2%;
+}
+.reviewImg{
+    width: 32%;
+    /* border: solid green; */
+}
+.reviewImg1{
+    width: 300px;
     border-radius: 10px;
 }
-.testImg{
-    width: 30%;
+.review-para{
+    /* border: solid firebrick; */
+    margin-top: -5%;
+    font-size: 1.2rem;
+    text-align: center;
 }
-.testImg1{
-    width: 20px;
+.review-author{
+     /* border: solid firebrick; */
+    font-weight: 600;
+    margin-top:5%;
+    font-size: 1.2rem;
+    text-align: center;
 }
 footer{
     text-align: center;
